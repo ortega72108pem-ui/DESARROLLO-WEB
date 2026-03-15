@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Ejercicios de Ángulos y Triángulos</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#eef3f8;
+margin:40px;
+}
+
+h1{
+text-align:center;
+color:#003366;
+}
+
+.ejercicio{
+background:white;
+padding:15px;
+margin:20px 0;
+border-radius:8px;
+box-shadow:0 0 5px gray;
+}
+
+svg{
+background:#f8fbff;
+border:1px solid #ccc;
+margin-top:10px;
+}
+
+button{
+margin-top:10px;
+padding:6px 12px;
+background:#003366;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+.solucion{
+display:none;
+color:green;
+font-weight:bold;
+margin-top:8px;
+}
+
+</style>
+
+<script>
+
+function mostrar(id){
+
+var x=document.getElementById(id);
+
+if(x.style.display==="none"){
+x.style.display="block";
+}else{
+x.style.display="none";
+}
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h1>Problemas de Ángulos y Triángulos</h1>
+
+<!-- EJERCICIO 1 -->
+
+<div class="ejercicio">
+
+<p><b>1.</b> En el triángulo siguiente, calcula el ángulo x.</p>
+
+<svg width="200" height="150">
+
+<polygon points="50,120 150,120 100,30" stroke="black" fill="none"/>
+
+<text x="60" y="110">50°</text>
+<text x="130" y="110">60°</text>
+<text x="95" y="70">x</text>
+
+</svg>
+
+<button onclick="mostrar('s1')">Ver solución</button>
+
+<div class="solucion" id="s1">x = 70°</div>
+
+</div>
+
+
+<!-- EJERCICIO 2 -->
+
+<div class="ejercicio">
+
+<p><b>2.</b> Calcula el ángulo faltante del triángulo.</p>
+
+<svg width="200" height="150">
+
+<polygon points="40,120 160,120 100,40" stroke="black" fill="none"/>
+
+<text x="55" y="110">40°</text>
+<text x="135" y="110">80°</text>
+<text x="95" y="80">x</text>
+
+</svg>
+
+<button onclick="mostrar('s2')">Ver solución</button>
+
+<div class="solucion" id="s2">x = 60°</div>
+
+</div>
+
+
+<!-- EJERCICIO 3 -->
+
+<div class="ejercicio">
+
+<p><b>3.</b> Si dos ángulos de un triángulo miden 30° y 70°, calcula el tercero.</p>
+
+<svg width="200" height="150">
+
+<polygon points="40,120 160,120 100,30" stroke="black" fill="none"/>
+
+<text x="55" y="110">30°</text>
+<text x="135" y="110">70°</text>
+<text x="95" y="70">x</text>
+
+</svg>
+
+<button onclick="mostrar('s3')">Ver solución</button>
+
+<div class="solucion" id="s3">x = 80°</div>
+
+</div>
+
+
+<!-- EJERCICIO 4 -->
+
+<div class="ejercicio">
+
+<p><b>4.</b> Triángulo isósceles: los ángulos de la base son iguales.</p>
+
+<svg width="200" height="150">
+
+<polygon points="40,120 160,120 100,30" stroke="black" fill="none"/>
+
+<text x="60" y="110">50°</text>
+<text x="135" y="110">50°</text>
+<text x="95" y="70">x</text>
+
+</svg>
+
+<button onclick="mostrar('s4')">Ver solución</button>
+
+<div class="solucion" id="s4">x = 80°</div>
+
+</div>
+
+
+<!-- EJERCICIO 5 -->
+
+<div class="ejercicio">
+
+<p><b>5.</b> Calcula el ángulo exterior.</p>
+
+<svg width="220" height="150">
+
+<polygon points="60,120 160,120 100,40" stroke="black" fill="none"/>
+
+<line x1="60" y1="120" x2="20" y2="120" stroke="black"/>
+
+<text x="80" y="110">40°</text>
+<text x="120" y="110">30°</text>
+<text x="25" y="110">x</text>
+
+</svg>
+
+<button onclick="mostrar('s5')">Ver solución</button>
+
+<div class="solucion" id="s5">x = 70°</div>
+
+</div>
+
+
+<!-- EJERCICIOS 6-20 -->
+
+<div class="ejercicio">
+<p><b>6.</b> En un triángulo rectángulo: 90°, 35° y x.</p>
+<button onclick="mostrar('s6')">Ver solución</button>
+<div class="solucion" id="s6">x = 55°</div>
+</div>
+
+<div class="ejercicio">
+<p><b>7.</b> Ángulos: 60°, 60°, x.</p>
+<button onclick="mostrar('s7')">Ver solución</button>
+<div class="solucion" id="s7">x = 60°</div>
+</div>
+
+<div class="ejercicio">
+<p><b>8.</b> Ángulos: 25°, 65°, x.</p>
+<button onclick="mostrar('s8')">Ver solución</button>
+<div class="solucion" id="s8">x = 90°</div>
+</div>
+
+<div class="ejercicio">
+<p><b>9.</b> Ángulos: 45°, 45°, x.</p>
+<button onclick="mostrar('s9')">Ver solución</button>
+<div class="solucion" id="s9">x = 90°</div>
+</div>
+
+<div class="ejercicio">
+<p><b>10.</b> Ángulos: 20°, 70°, x.</p>
+<button onclick="mostrar('s10')">Ver solución</button>
+<div class="solucion" id="s10">x = 90°</div>
+</div>
+
+<div class="ejercicio">
+<p><b>11.</b> Ángulos: 30°, 50°, x.</p>
+<button onclick="mostrar('s11')">Ver solución</button>
+<div class="solucion" id="s11">x = 100°</div>
+</div>
+
+<div class="ejercicio">
+<p><b>12.</b> Ángulos: 45°, 60°, x.</p>
+<button onclick="mostrar('s12')">Ver solución</button>
+<div class="solucion" id="s12">x = 75°</div>
+</div>
+
+<div class="ejercicio">
+<p><b>13.</b> Ángulos: 15°, 65°, x.</p>
+<button onclick="mostrar('s13')">Ver solución</button>
+<div class="solucion" id="s13">x = 100°</div>
+</div>
+
+<div class="ejercicio">
+<p><b>14.</b> Ángulos: 70°, 40°, x.</p>
+<button onclick="mostrar('s14')">Ver solución</button>
+<div class="solucion" id="s14">x = 70°</div>
+</div>
+
+<div class="ejercicio">
+<p><b>15.</b> Ángulos: 80°, 40°, x.</p>
+<button onclick="mostrar('s15')">Ver solución</button>
+<div class="solucion" id="s15">x = 60°</div>
+</div>
+
+<div class="ejercicio">
+<p><b>16.</b> Ángulos: 55°, 45°, x.</p>
+<button onclick="mostrar('s16')">Ver solución</button>
+<div class="solucion" id="s16">x = 80°</div>
+</div>
+
+<div class="ejercicio">
+<p><b>17.</b> Ángulos: 35°, 75°, x.</p>
+<button onclick="mostrar('s17')">Ver solución</button>
+<div class="solucion" id="s17">x = 70°</div>
+</div>
+
+<div class="ejercicio">
+<p><b>18.</b> Ángulos: 50°, 50°, x.</p>
+<button onclick="mostrar('s18')">Ver solución</button>
+<div class="solucion" id="s18">x = 80°</div>
+</div>
+
+<div class="ejercicio">
+<p><b>19.</b> Ángulos: 20°, 80°, x.</p>
+<button onclick="mostrar('s19')">Ver solución</button>
+<div class="solucion" id="s19">x = 80°</div>
+</div>
+
+<div class="ejercicio">
+<p><b>20.</b> Ángulos: 10°, 70°, x.</p>
+<button onclick="mostrar('s20')">Ver solución</button>
+<div class="solucion" id="s20">x = 100°</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Tablas de Multiplicar del 1 al 20</title>
+
+<style>
+
+body{
+font-family: Verdana;
+text-align:center;
+background-image:url("https://i.imgur.com/8I349zC.jpg");
+background-size:cover;
+}
+
+h1{
+color:white;
+background:rgba(0,0,0,0.6);
+padding:10px;
+}
+
+.contenedor{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.tabla{
+margin:10px;
+padding:10px;
+border-radius:10px;
+width:180px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+td{
+border:1px solid black;
+padding:4px;
+}
+
+.tabla1{background:#FFB3BA;}
+.tabla2{background:#FFDFBA;}
+.tabla3{background:#FFFFBA;}
+.tabla4{background:#BAFFC9;}
+.tabla5{background:#BAE1FF;}
+.tabla6{background:#D5BAFF;}
+.tabla7{background:#FFC9DE;}
+.tabla8{background:#C9FFF3;}
+.tabla9{background:#FFD9B3;}
+.tabla10{background:#E6FFBA;}
+.tabla11{background:#BAF0FF;}
+.tabla12{background:#F0BAFF;}
+.tabla13{background:#FFBAC9;}
+.tabla14{background:#BAFFD9;}
+.tabla15{background:#BAC9FF;}
+.tabla16{background:#FFE0BA;}
+.tabla17{background:#E0FFBA;}
+.tabla18{background:#BAFFE0;}
+.tabla19{background:#E0BAFF;}
+.tabla20{background:#FFCBA4;}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Tablas de Multiplicar del 1 al 20</h1>
+
+<div class="contenedor">
+
+<script>
+
+for(let i=1;i<=20;i++){
+
+document.write("<div class='tabla tabla"+i+"'>");
+
+document.write("<h3>Tabla del "+i+"</h3>");
+
+document.write("<table>");
+
+for(let j=1;j<=20;j++){
+
+document.write("<tr><td>"+i+" × "+j+" = "+(i*j)+"</td></tr>");
+
+}
+
+document.write("</table>");
+
+document.write("</div>");
+
+}
+
+</script>
+
+</div>
+
+</body>
+</html>
